@@ -1,5 +1,4 @@
 # Buffer-Overflow
-BufferOverflow Scripts written on the basis of TryHackMe and HackTheBox Machines 
 ## Hackthebox
 - Buff
 >Type - Stack Based BufferOverflow Win32<br/>IP - 10.10.10.198<br/>Machine Link -  [Buff](https://www.hackthebox.eu/home/machines/profile/263)<br/>
