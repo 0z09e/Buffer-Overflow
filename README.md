@@ -7,3 +7,5 @@
 ## TryHackMe
 - Buffer Overflow Prep
 >Type - Stack Based BufferOverflow Win32<br/>IP - NA<br/>Machine Link -  [Buffer Overflow Prep](https://tryhackme.com/room/bufferoverflowprep)<br/>
+- Brainpan
+>Type - Stack Based BufferOverflow Win32<br/>IP - NA<br/>Machine Link -  [Brainpan](https://tryhackme.com/room/brainpan)<br/>
