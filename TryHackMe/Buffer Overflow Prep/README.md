@@ -25,7 +25,7 @@ connection.close()
 We see the program crashed while sending `2000` bytes.
 If we look at the `Immunity`, it also says that the program has been terminated.
 
-![](Pasted%20image%2020210814204901.png)
+![](images/Pasted image 20210814204901.png)
 
 Now we have a rough idea of where the program has crashed.
 So now we could create a pattern of length upto 2000, to get the exact number of bytes.
@@ -45,7 +45,7 @@ So we use mona to find the `EIP` of the program.
 On the console at the bottom we execute 
 CMD : `!mona findmsp -distance 2000`
 *Here we have used 2000, because the program crashes at 2000 bytes*.
-![](Pasted%20image%2020210814210705.png)
+![](images/Pasted image 20210814210705.png)
 We get the value of EIP here which is `1978`.
 We can also determine that by copying the `HEX`data and using `msf-pattern_offset`.
 ```bash
@@ -98,7 +98,7 @@ After sending them and manually finding all the badchars we get 4 bad chars  : `
 Now we can find the `Jump Point` by using mona with the bad chars we found.
 CMD : `!mona jmp -r esp -cpb ""\x00\x07\x2e\xa0"`
 
-![](Pasted%20image%2020210814225143.png)
+![](images/Pasted image 20210814225143.png)
 
 Now we pickup an address from here and set the value of return to that address.
 We use `struct` here to convert the value into little endian.
@@ -194,7 +194,7 @@ r.send(exploit + b"\n")
 r.close()
 ```
 We run that exploit and get a shell.
-![](Pasted%20image%2020210814225608.png)
+![](images/Pasted image 20210814225608.png)
 ***
 
 
